@@ -1,0 +1,3 @@
+# Unhandled Runtime Exceptions in Dart Asynchronous Functions
+
+This repository demonstrates a common error in Dart asynchronous programming: insufficient error handling in `async` functions. The `fetchData` function uses a `try-catch` block, but this only handles exceptions during HTTP requests and JSON decoding.  Runtime exceptions in the data processing stage go uncaught, potentially crashing the app.  The solution demonstrates proper error handling to mitigate this.
